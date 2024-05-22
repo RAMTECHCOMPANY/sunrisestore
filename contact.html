@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo"><img class="sunrise" src="images/IMG_20240507_164707_950.jpg" alt=""></a>
+        <nav class="firstnavbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">about</a>
+            <a href="products.html">products</a>
+            <a href="index.html#review">review</a>
+            <a href="contact.html" class="active">contact</a>
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="products.html" class="fas fa-shopping-cart"></a>
+            <a href="contact.html" class="fas fa-users"></a>
+        </div>
+    </header>
+    <!--Contact-->
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span></h1>
+        <div class="row">
+            <form action="" id="myForm">
+                <p id="success" style="color: green;"></p>
+                <input type="text" placeholder="name" class="box" id="name">
+                <p id="errorName" style="color: red;"></p>
+                <input type="email" placeholder="e-mail" class="box" id="email">
+                <p id="errorEmail" style="color: red;"></p>
+                <input type="number" placeholder="number" class="box" id="number">
+                <p id="errorNumber" style="color: red;"></p>
+                <textarea name="" class="box" placeholder="message" id="detail" cols="30" rows="10">
+</textarea>
+                <p id="errorDetail" style="color: red;"></p>
+                <button type="submit" class="btn">send message</button>
+            </form>
+            <div class="image">
+                <img src="images/IMG_20240507_164707_950.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+    <script src="js/email_validate.js"></script>
+</body>
+
+</html>
